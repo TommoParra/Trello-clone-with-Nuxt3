@@ -1,0 +1,46 @@
+{
+    "name": "task-board",
+    "columns": [
+      {
+        "name": "todo",
+        "tasks": [
+          {
+            "id": "1",
+            "name": "Design homepage wireframe",
+            "description": "Create a low-fidelity wireframe for the homepage layout using Figma."
+          },
+          {
+            "id": "2",
+            "name": "Write blog outline",
+            "description": "Draft the structure for the upcoming blog post about our latest product feature."
+          }
+        ]
+      },
+      {
+        "name": "in-progress",
+        "tasks": [
+          {
+            "id": "3",
+            "name": "Implement authentication flow",
+            "description": "Add login, signup, and password recovery functionality using Firebase Auth."
+          }
+        ]
+      },
+      {
+        "name": "complete",
+        "tasks": [
+          {
+            "id": "4",
+            "name": "Set up project repository",
+            "description": "Initialized GitHub repo with README, issue templates, and main branch protection rules."
+          },
+          {
+            "id": "5",
+            "name": "Install Tailwind CSS",
+            "description": "Configured Tailwind with PostCSS and included custom theme variables for the app."
+          }
+        ]
+      }
+    ]
+  }
+  
