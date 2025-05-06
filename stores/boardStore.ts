@@ -1,11 +1,13 @@
 import { defineStore } from "pinia"
+import { useStorage } from "@vueuse/core"
 import boardData from '~/data/board.json'
 
 
-export const useBoardStore = defineStore('boardStore', () => {
-    const board = ref(boardData)
 
-    function addColumn(columnName) {
+export const useBoardStore = defineStore('boardStore', () => {
+    const board = useStorage('board', boardData)
+
+    function addColumn(columnName: string) {
         board.value.columns.push({
             name: columnName,
             tasks: []
@@ -13,6 +15,7 @@ export const useBoardStore = defineStore('boardStore', () => {
     }
 
     return {
-        board
+        board,
+        addColumn
     }
 })
