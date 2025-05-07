@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Html } from '#components';
-
 </script>
 
 <template>
