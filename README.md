@@ -2,7 +2,7 @@
 This is a Vue 3 + Nuxt 3 experiment for CRUD operations with a Kanban-style board.  
 Originally just CRUD with Pinia, but I got carried away and now includes drag-and-drop and toast notifications.
 
-It allows:
+### It allows:
 - ✅ Create and delete tasks and columns  
 - ✏️ Edit task names and descriptions, as well as column titles  
 - 🔃 Drag and drop tasks **and** columns  
@@ -65,6 +65,6 @@ npm run generate
 ```
 
 Resources
-- [Link text](https://nuxt.com/docs/getting-started/introduction)
-- [Link text](https://nuxt.com/docs/getting-started/deployment)
+- [Nuxt Documentation](https://nuxt.com/docs/getting-started/introduction)
+- [Deployment Docs](https://nuxt.com/docs/getting-started/deployment)
 
