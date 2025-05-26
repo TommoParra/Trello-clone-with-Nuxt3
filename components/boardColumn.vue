@@ -18,14 +18,21 @@ const router = useRouter()
 const editNameState = ref(false)
 const newTaskName = ref('')
 
+const toast = useToast()
+
 function addTask() {
     console.log('Adding:', newTaskName.value)
     boardStore.addTask(props.columnIndex, newTaskName.value)
     newTaskName.value = ''
 }
 
-function deleteColumn(columnIndex) {
-    boardStore.deleteColumn(columnIndex)
+function deleteColumn (columnIndex) {
+  const name = props.column.name   
+  boardStore.deleteColumn(columnIndex) 
+  toast.add({
+    title: 'Column deleted',
+    description: `${name} has been deleted.`
+  })
 }
 
 function dropItem(event, { toColumnIndex, toTaskIndex }) {
