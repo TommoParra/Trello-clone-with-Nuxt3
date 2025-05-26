@@ -1,11 +1,10 @@
-<script setup lang="ts">
-import { Html } from '#components';
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <Html>
-    <Body class="bg-emerald-500 min-h-screen">
+    <UApp class="bg-emerald-500 min-h-screen">
       <NuxtPage />
-    </Body>
+    </UApp>
+    <UNotifications />
   </Html>
 </template>
