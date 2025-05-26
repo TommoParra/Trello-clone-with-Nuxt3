@@ -1,75 +1,70 @@
-# Nuxt Minimal Starter
+# Nuxt 3 CRUD + Drag & Drop Board
+This is a Vue 3 + Nuxt 3 experiment for CRUD operations with a Kanban-style board.  
+Originally just CRUD with Pinia, but I got carried away and now includes drag-and-drop and toast notifications.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+It allows:
+- ✅ Create and delete tasks and columns  
+- ✏️ Edit task names and descriptions, as well as column titles  
+- 🔃 Drag and drop tasks **and** columns  
+- 🔔 Toast notifications for deletes
+
+## Stack
+
+- Nuxt 3 (SPA mode)
+- Vue 3 + Composition API
+- Pinia (state + persistence with `useStorage`)
+- TailwindCSS
+- Nuxt UI (for toasts, buttons, inputs)
+- Vite
+
+## File Structure
+
+```bash
+.
+├── app.vue
+├── assets/css/main.css
+├── components/boardColumn.vue
+├── data/board.json
+├── nuxt.config.ts
+├── pages/
+│ ├── index.vue
+│ └── index/tasks/[id].vue
+├── stores/boardStore.ts
+├── tailwind.config.ts
+└── ...
+```
 
 ## Setup
 
-Make sure to install dependencies:
-
+Install dependencies:
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+Run dev server at http://localhost:3000:
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
-
-Build the application for production:
-
+Build for production:
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
-
+Preview locally:
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Deployment
+For static hosting (Netlify, Vercel, etc):
+```bash
+npm run generate
+```
+
+Resources
+- [Link text](https://nuxt.com/docs/getting-started/introduction)
+- [Link text](https://nuxt.com/docs/getting-started/deployment)
+
